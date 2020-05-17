@@ -16,6 +16,10 @@ body {
   font-family: "Spartan", sans-serif;
 }
 
+div.hide {
+  display: none;
+}
+
 .container {
   width: 85%;
   margin: 0 auto;
@@ -101,6 +105,7 @@ header {
   font-weight: bold;
   font-size: 1.2rem;
   cursor: pointer;
+  margin-left: auto;
 }
 
 .filter-box .clear-filters:hover {
@@ -287,6 +292,10 @@ header {
 .attribution {
   padding: 3rem 0;
   text-align: center;
+}
+
+.attribution p {
+  line-height: 3rem;
 }
 
 .attribution a {

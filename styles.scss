@@ -16,6 +16,12 @@ body {
   font-family: "Spartan", sans-serif;
 }
 
+div {
+  &.hide {
+    display: none;
+  }
+}
+
 .container {
   width: 85%;
   margin: 0 auto;
@@ -42,6 +48,7 @@ header {
   display: flex;
   position: relative;
   margin-top: -4rem;
+
   @media screen and (min-width: 1200px) {
     padding: 1.5rem 3rem;
     margin-top: -3rem;
@@ -85,7 +92,7 @@ header {
     font-weight: bold;
     font-size: 1.2rem;
     cursor: pointer;
-
+    margin-left: auto;
     &:hover {
       color: hsl(180, 29%, 50%);
       border-bottom: 1px solid hsl(180, 29%, 50%);
@@ -238,6 +245,10 @@ header {
 .attribution {
   padding: 3rem 0;
   text-align: center;
+
+  p {
+    line-height: 3rem;
+  }
 
   a {
     color: hsl(180, 29%, 50%);
